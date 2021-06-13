@@ -1,0 +1,25 @@
+
+plugins {
+
+	id 'eclipse'
+    id 'java-library'
+    
+}
+
+repositories {
+
+	maven { url 'https://hub.spigotmc.org/nexus/content/repositories/public/' }
+	
+	jcenter()
+    
+}
+
+dependencies {
+	
+	// Spigot
+	implementation 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+	
+	//JUnit
+    testImplementation 'junit:junit:4.12'
+    
+}

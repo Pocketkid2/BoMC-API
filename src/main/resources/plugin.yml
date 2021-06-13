@@ -1,0 +1,11 @@
+name: BoMC-API
+main: com.BoMC.API.API
+version: 1.0
+description: The core API for the Book of Minecraft Server
+api-version: 1.16
+author: Reyzerbit, Drofal980, 20rzaugg, Pocketkid2
+website: 
+prefix: BoMC-API
+softdepend: 
+commands:
+permissions:
