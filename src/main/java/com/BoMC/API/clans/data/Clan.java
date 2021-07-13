@@ -39,5 +39,53 @@ public class Clan {
 		this.side = side;
 		
 	}
+	
+	public List<UUID> getPlayers() {
+		
+		return players;
+		
+	}
+
+	public void addPlayer(UUID player) {
+		
+		players.add(player);
+		
+	}
+
+	public String getClanID() {
+		
+		return clanID;
+		
+	}
+
+	public void setClanID(String clanID) {
+		
+		this.clanID = clanID;
+		
+	}
+
+	public String getClanName() {
+		
+		return clanName;
+		
+	}
+
+	public void setClanName(String clanName) {
+		
+		this.clanName = clanName;
+		
+	}
+
+	public Side getSide() {
+		
+		return side;
+		
+	}
+
+	public void setSide(Side side) {
+		
+		this.side = side;
+		
+	}
 
 }

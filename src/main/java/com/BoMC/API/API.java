@@ -16,7 +16,7 @@ import com.BoMC.API.clans.data.Clan;
 
 public class API extends JavaPlugin {
 	
-	public static List<Clan> CLANS;
+	private static List<Clan> CLANS;
 	
 	// Files
 	public static File CONFIG_FILE;
@@ -68,6 +68,25 @@ public class API extends JavaPlugin {
 	public void onDisable() {
 		
 		
+		
+	}
+	
+	/*
+	 *  @return The clan with given ID, or null if one is not found.
+	 */
+	public static Clan getClan(String id) {
+		
+		for(Clan c : CLANS) {
+			
+			if(c.getClanID().equalsIgnoreCase(id)) {
+				
+				return c;
+				
+			}
+			
+		}
+		
+		return null;
 		
 	}
 
